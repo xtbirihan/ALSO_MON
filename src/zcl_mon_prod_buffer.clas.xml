@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_MON_PROD_BUFFER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Only for reference, after tests must be deleted</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <WITH_UNIT_TESTS>X</WITH_UNIT_TESTS>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Yes</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>No</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Ja</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Nein</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Oui</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Non</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>I</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Sì</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>No</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Sim</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Não</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Sí</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>No</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>FILL_FIELD_MTART_AND_MMSTA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>check MMSTA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PROD_NODE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Product Warehouse Attribute Node Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SCUGUID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Security GUID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Product Storage Type Attribute Node Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_UOM_NODE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Product Unit of Measure Node Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_SERVICE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reference to Service</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_ENTITLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table of entitled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_MAT_NR_ID_GUID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Mapping mat nummer mat guid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_LGNUM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_SCU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supply Chain Unit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_SCUGUID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>scu guid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>QUAN_CONVERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Quantity</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_LGNUM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Warehouse number</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_LIST_OF_WH_PRODUCTS</CMPNAME>
+     <SCONAME>IT_WH_PRODUCT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Productl: Table Type for Warehouse-Number-Specific Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_FIELD_MTART_AND_MMSTA</CMPNAME>
+     <SCONAME>CT_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_FIELD_MTART_AND_MMSTA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PROD_NODE_DATA</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PROD_NODE_DATA</CMPNAME>
+     <SCONAME>ET_MARM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>External Output Structure für MARM</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PROD_NODE_DATA</CMPNAME>
+     <SCONAME>ET_MATERIAL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for /SAPAPO/MATKEY_OUT_STR</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PROD_NODE_DATA</CMPNAME>
+     <SCONAME>ET_PROD_UOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>External Output Structure für MARM</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PROD_NODE_DATA</CMPNAME>
+     <SCONAME>IV_CWREL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Catch weight product</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PROD_NODE_DATA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SCUGUID</CMPNAME>
+     <SCONAME>EV_SCUGUID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supply Chain Unit GUID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SCUGUID</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product Storage Stype</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IT_SELECTED_WH_PRODUCTS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_CWREL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Link field for view query</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_UOM_NODE_DATA</CMPNAME>
+     <SCONAME>IT_SELECTED_WH_PRODUCTS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INTEGRATE_SAPAPO_DATA</CMPNAME>
+     <SCONAME>IV_MATID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Number (UID) for Product</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>QUAN_CONVERT</CMPNAME>
+     <SCONAME>CV_D_QTY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display Quantity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>QUAN_CONVERT</CMPNAME>
+     <SCONAME>IV_D_UOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Base Unit of Measure</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>QUAN_CONVERT</CMPNAME>
+     <SCONAME>IV_MATID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>QUAN_CONVERT</CMPNAME>
+     <SCONAME>IV_S_QTY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display Quantity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>QUAN_CONVERT</CMPNAME>
+     <SCONAME>IV_S_UOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Base Unit of Measure</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_LGNUM</CMPNAME>
+     <SCONAME>ET_ENTITLED_GUID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type for Partner Number and Partner GUID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_LGNUM</CMPNAME>
+     <SCONAME>EV_SCU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supply Chain Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_LGNUM</CMPNAME>
+     <SCONAME>EV_SCUGUID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supply Chain Unit GUID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_LGNUM</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

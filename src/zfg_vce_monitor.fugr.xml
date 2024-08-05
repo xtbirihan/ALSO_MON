@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>VCE Monitor functionality</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZFG_VCE_MONITOR</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_CARR_LIST_MON</FUNCNAME>
+     <SHORT_TEXT>Outbound Delivery Carrier</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_VARIANT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VARIANT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_MODE</PARAMETER>
+       <DEFAULT>&apos;1&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/DE_MON_FM_MODE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA_PARENT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/TT_WIP_WHRHEAD_OUT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CT_TAB_RANGE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RSDS_TRANGE</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RETURNCODE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>XFELD</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_VARIANT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VARIANT</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTT_MON_SHIP_CALC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_VARIANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP: Name of variant (without program name)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_MODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mode for Function Modules in WM Monitor</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA_PARENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Outbound Delivery Header in WIP Monitor</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_RETURNCODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Checkbox</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_VARIANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP: Name of variant (without program name)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Transfer Order Details for the WM Monitor Output</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CT_TAB_RANGE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_DLV_UPDATE_MON</FUNCNAME>
+     <SHORT_TEXT>Change carrier based on existing proposals</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STANDARD TABLE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_HU_CANCEL_REQ</FUNCNAME>
+     <SHORT_TEXT>HU Cancel request</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STANDARD TABLE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_HU_RESEND_SHIPREQ</FUNCNAME>
+     <SHORT_TEXT>Send ShipRequest for a new label</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STANDARD TABLE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_MON_NAV</FUNCNAME>
+     <SHORT_TEXT>Navigate to ZPACK monitor</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_DOCNO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/TT_DOCNO</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_DOCNO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Delivery Number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_NEW_PROPOSAL_MON</FUNCNAME>
+     <SHORT_TEXT>Request new proposal for delivery</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STANDARD TABLE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NOT_SUPPORTED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NOT_SUPPORTED</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_MON_PROD</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Product Overview Monitor Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Yes</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>No</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Ja</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Nein</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Oui</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Non</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>I</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Sì</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>No</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Sim</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Não</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Sí</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>No</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Product Storage Type Attribute Node Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Get Product Storage Type Attribute Node Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>Get Product Storage Type Attribute Node Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Get Product Storage Type Attribute Node Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Get Product Storage Type Attribute Node Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_LGNUM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_LGNUM</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Warehouse Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_LGNUM</CMPNAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>Warehouse Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_LGNUM</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Warehouse Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_LGNUM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Warehouse Number</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product Storage Stype</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Product Storage Stype</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>Product Storage Stype</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Product Storage Stype</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Product Storage Stype</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IT_SELECTED_WH_PRODUCTS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IT_SELECTED_WH_PRODUCTS</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IT_SELECTED_WH_PRODUCTS</SCONAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IT_SELECTED_WH_PRODUCTS</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IT_SELECTED_WH_PRODUCTS</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Product Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_CWREL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Link field for view query</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_CWREL</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Link field for view query</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_CWREL</SCONAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>Link field for view query</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_CWREL</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Link field for view query</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_CWREL</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Link field for view query</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_STYP_NODE_DATA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
